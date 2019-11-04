@@ -17,8 +17,10 @@ namespace Domain.Entities
         public DateTime Processing_date { get; set; }
         public DateTime Clossing_date { get; set; }
         public string Type { get; set; }
+        public string Image { get; set; }
         public string Description { get; set; }
-
+        public string Objet { get; set; }
+        public Boolean Etat { get; set; }
         [ForeignKey("IdUser")]
         public virtual User user { get; set; }
 

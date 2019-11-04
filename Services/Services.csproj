@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="IServiceBoutique.cs" />
     <Compile Include="IServiceCategorie.cs" />
+    <Compile Include="IServiceFiche.cs" />
     <Compile Include="IServicePanier.cs" />
     <Compile Include="IServiceProduit.cs" />
     <Compile Include="IServiceUser.cs" />
