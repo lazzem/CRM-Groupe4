@@ -1,0 +1,153 @@
+﻿@model IEnumerable<Domain.Entities.FicheTechnique_Mobile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Marque)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimensions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Poids)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ecrant)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Definition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Os)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Memoire_interne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Micro_sd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Connectivite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nfc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ram)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capteur_enpreintes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resistance_eau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Batterie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Port_charge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recharge_rapide)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recharge_sansfil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Coloris)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prix)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marque)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dimensions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Poids)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ecrant)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Definition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Photo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Os)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memoire_interne)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Micro_sd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Connectivite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nfc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ram)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Capteur_enpreintes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resistance_eau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Batterie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Port_charge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Recharge_rapide)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Recharge_sansfil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Coloris)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prix)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_fichemobile }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_fichemobile }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_fichemobile })
+        </td>
+    </tr>
+}
+
+</table>

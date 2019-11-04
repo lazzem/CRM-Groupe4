@@ -1,0 +1,192 @@
+﻿@model Domain.Entities.FicheTechnique_Mobile
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FicheTechnique_Mobile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marque)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimensions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dimensions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poids)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poids)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ecrant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ecrant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Definition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Definition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Os)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Os)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memoire_interne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memoire_interne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Micro_sd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Micro_sd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Connectivite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Connectivite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nfc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nfc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ram)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ram)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capteur_enpreintes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capteur_enpreintes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resistance_eau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resistance_eau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Batterie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Batterie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Port_charge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Port_charge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recharge_rapide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recharge_rapide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recharge_sansfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recharge_sansfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coloris)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coloris)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prix)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

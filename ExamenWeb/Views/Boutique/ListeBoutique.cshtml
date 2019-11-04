@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Domain.Entities.Boutique>
+
+@{
+    ViewBag.Title = "ListeBoutique";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListeBoutique</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ville.Ville_nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Heure_ouverture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Heure_fermeture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ascisse_X)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ordonné_Y)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ville.Ville_nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Heure_ouverture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Heure_fermeture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ascisse_X)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ordonné_Y)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_boutique }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_boutique }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_boutique })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,91 @@
+﻿@model Domain.Entities.Produit
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+
+
+
+
+    <section class="wrapper site-min-height">
+       
+               
+                    <div class="custom-box">
+                        <div class="servicetitle">
+
+
+                            <div>
+                                <h4>Produit</h4>
+
+                                <dd>
+                                    @{string path = "~/Content/Upload/" + Model.Image;}
+
+                                    <img src="@Url.Content(path)" width="500" height="300">
+                                </dd>
+                                <br />
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.Description):
+                                
+                                    @Html.DisplayFor(model => model.Description)
+                                </dd>
+                                
+
+
+                                <hr />
+                                <ul class="pricing">
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Categorie.Nom):
+                                  
+                                        @Html.DisplayFor(model => model.Categorie.Nom)
+                                    </li>
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Boutique.Nom):
+                                    
+                                        @Html.DisplayFor(model => model.Boutique.Nom)
+                                    </li>
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Libelle):
+                                    
+                                        @Html.DisplayFor(model => model.Libelle)
+                                    </li>
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Nom):
+                                    
+                                        @Html.DisplayFor(model => model.Nom)
+                                    </li>
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Prix):
+                                    
+                                        @Html.DisplayFor(model => model.Prix)
+                                    </li>
+
+                                    <li>
+                                        @Html.DisplayNameFor(model => model.Quantitee):
+                                    
+                                        @Html.DisplayFor(model => model.Quantitee)
+                                    </li>
+
+                                   </ul>
+
+</div>
+                            <p>
+                                @Html.ActionLink("Edit", "Edit", new { id = Model.Id_produit }) |
+                                @Html.ActionLink("Back to List", "Index")
+                            </p>
+
+                            </div>
+                        </div>
+                   
+              
+      
+    </section>
+
