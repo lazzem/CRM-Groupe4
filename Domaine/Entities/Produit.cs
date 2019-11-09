@@ -16,7 +16,7 @@ namespace Domain.Entities
 
         public string Libelle { get; set; }
         public string Nom { get; set; }
-      //  public float Prix { get; set; }
+        public float Prix { get; set; } //comment
         public int Quantitee { get; set; }
 
         public string Description { get; set; }
