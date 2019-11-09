@@ -15,11 +15,13 @@ namespace Domain.Entities
 
         public DateTime Date { get; set; }
         public string Description { get; set; }
+        public string texte { get; set; }
 
-        /* [ForeignKey("ComplaintID")]
-         public virtual Complaint complaint { get; set; }
+        [ForeignKey("Id_produit")]
+        public virtual Produit produit { get; set; }
 
-         public int? ComplaintID { get; set; }*/
+        public int? Id_produit { get; set; }
+       
 
     }
 }
