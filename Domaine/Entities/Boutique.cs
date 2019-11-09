@@ -25,8 +25,7 @@ namespace Domain.Entities
         public int? Id_ville { get; set; }
         public string Zone { get; set; }
         public string Service { get; set; }
-        public string Heure_ouverture { get; set; }
-        public string Heure_fermeture { get; set; }
+ 
         public float Ascisse_X { get; set; }
         public float Ordonné_Y { get; set; }
 

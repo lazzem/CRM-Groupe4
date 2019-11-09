@@ -16,7 +16,7 @@ namespace Domain.Entities
 
         public string Libelle { get; set; }
         public string Nom { get; set; }
-        public float Prix { get; set; } //comment
+        public float Prix { get; set; } 
         public int Quantitee { get; set; }
 
         public string Description { get; set; }
@@ -30,7 +30,7 @@ namespace Domain.Entities
         [ForeignKey("Id_boutique")]
         public virtual Boutique Boutique { get; set; }
         // [ForeignKey("Boutique")]
-        public int? Id_boutique { get; set; }
+        public int? Id_boutique { get; set; } 
 
 
 
